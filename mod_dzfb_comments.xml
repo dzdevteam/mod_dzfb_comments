@@ -30,6 +30,21 @@
     <config>
         <fields name="params">
             <fieldset name="basic">
+                <field name="width" type="text" filter="int"
+                    class="validate-numeric" default="470"
+                    label="MOD_DZFB_LBL_WIDTH"
+                    description="MOD_DZFB_DESC_WIDTH" />
+                <field name="num_posts" type="text" filter="int"
+                    class="validate-numeric" default="10"
+                    label="MOD_DZFB_LBL_NUM_POSTS"
+                    description="MOD_DZFB_DESC_NUM_POSTS" />
+                <field name="colorscheme" type="radio"
+                    default="light" class="btn-group"
+                    label="MOD_DZFB_LBL_COLORSCHEME"
+                    description="MOD_DZFB_DESC_COLORSCHEME">
+                    <option value="light">MOD_DZFB_LIGHT</option>
+                    <option value="dark">MOD_DZFB_DARK</option>
+                </field>
             </fieldset>
             <fieldset name="advanced">
                 <field name="layout" type="modulelayout"
