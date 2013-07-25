@@ -11,5 +11,5 @@
 defined('_JEXEC') or die;
 ?>
 <div class="dzfb_comments-module<?php echo $moduleclass_sfx; ?>">
-    <div class="fb-comments" data-href="<?php echo JUri::current(); ?>" <?php echo $data_attribs; ?>></div>
+    <div class="fb-comments" <?php echo $data_attribs; ?>></div>
 </div>

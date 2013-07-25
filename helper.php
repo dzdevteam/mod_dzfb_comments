@@ -7,6 +7,10 @@ abstract class modDZFacebookCommentsHelper
     public static function getDataAttribs($params) {
         $data = array();
         
+        # href
+        $href = JUri::current();
+        $data[] = "data-href=\"$href\"";
+        
         # Box width
         $width = (int) $params->get('width', 470);
         if ($width)
